@@ -3,47 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>432 HTML/CSS Document</title>
-    <link rel="stylesheet" href="./new_css.css" type="text/css">
+    <title>My Biography</title>
+    <link rel="stylesheet" href="new_css.css">
 </head>
 <body>
-    <h1>About This Document</h1>
-    <p>
-        This document is part of the CSCE 432 overview of HTML. 
-        Here is the assignment <a href="https://docs.google.com/document/d/1ZSokZ2qsT4XnUlYfTPAH-ckcOF4kT4daC2vF6YpElsc/edit#heading=h.2gn8do996jbe">prompt</a>. 
-    </p>
-    <h1>Adding Images in HTML</h1>
-    <img src="https://brandguide.tamu.edu/assets/img/icons/home-social.jpg" alt="decorative" />
-    <img src="https://today.tamu.edu/wp-content/uploads/2019/05/image-27.png" alt="A line graph showing an exponential rise in the number of students enrolled in fall semesters at Texas A&M." />
-    <h1>Adding Tables with HTML</h1>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>School</th>
-            <th>Classification</th>
-        </tr>
-        <tr>
-            <td>Jake B</td>
-            <td>Texas A&M</td>
-            <td>Senior</td>
-        </tr>
-    </table>
-    <h1>Writing Paragraphs in HTML</h1>
-    <p>
-        The 'p' tag is used for writing out the content of a paragraph. For example:
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <h1>Creating Lists</h1>
+
+<header>
+    <h1>About Me</h1>
+</header>
+
+<nav>
     <ul>
-        <li>This</li>
-        <li>Is</li>
-        <li>NOT</li>
-        <li>Ordered</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-    <ol>
-        <li>This</li>
-        <li>IS</li>
-        <li>Ordered</li>
-    </ol>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <figure>
+        <img src="picture_of_me.jpg" alt="A picture of me">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Texas_A%26M_University_seal.svg/800px-Texas_A%26M_University_seal.svg.png" alt="decorative">
+        <figcaption>My name is <strong>Jake Bergin</strong></figcaption>
+    </figure>
+    <p>
+        I am a student at <a href="https://www.tamu.edu/index.html" target="_blank">Texas A&M</a>, pursuing a BS in Computer Science. I'm from McKinney, Texas and have two 
+        younger brothers who are also studying computer science. I am learning about accessibility in 
+        computing so that I can use strong accessible practices when developing applications for users.
+    </p>
+</section>
+
+<section id="interests">
+    <h2>Interests</h2>
+    <p>Here are some of my interests in accessibility.</p>
+    <ul>
+        <li>Using machine vision to help people who are visually impaired.</li>
+        <li>Automating tedious manual tasks that may be difficult for people who are physically impaired.</li>
+        <li>Finding low-tech solutions to accessibility issues.</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+    </form>
+    <button>Submit</button>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2024 Jake Bergin</p>
+</footer>
+
 </body>
 </html>
